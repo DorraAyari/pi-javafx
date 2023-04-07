@@ -10,5 +10,7 @@ package Entite;
  * @author dorraayari
  */
 public class Coach {
-    
+     String nom , description , weight , height , occupation;
+    int age,id;
+
 }
