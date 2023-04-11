@@ -14,7 +14,7 @@ import java.util.List;
 //T retourne  un seul objet
 public interface IService<T> {
     void insert(T t);
-    void delete(int id);
+    void delete(int coachId);
     void update(T t);
     List<T>readAll();
     T readById(int id);
