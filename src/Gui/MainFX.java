@@ -18,23 +18,27 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author dorraayari
+ * @author wiemhjiri
  */
-public class CoachMain extends Application {
+public class MainFX extends Application {
     
-     @Override
+    @Override
     public void start(Stage primaryStage) throws IOException {
-      Parent root =FXMLLoader.load(getClass().getResource("Detail.fxml"));
+        Parent root=FXMLLoader.load(getClass()
+                .getResource("DetailCoach.fxml"));
         
-        
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root);
         
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-     public static void main(String[] args) {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
         launch(args);
     }
+    
 }

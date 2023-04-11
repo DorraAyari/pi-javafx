@@ -11,18 +11,23 @@ package Entite;
  */
 public class Coach {
      String nom , description , weight , height , occupation;
-    int age,id;
+    int id;
+    int age;
+private String image;
+
 
     public Coach() {
     }
 
-    public Coach(String nom, String description, String weight, String height, String occupation, int age) {
+    public Coach(String nom, String description, String weight, String height, String occupation, int age, String image) {
         this.nom = nom;
         this.description = description;
         this.weight = weight;
         this.height = height;
         this.occupation = occupation;
         this.age = age;
+          this.image = image;
+            this.id = id;
     }
 
     public Coach(String nom, String description, String weight, String height, String occupation, int age, int id) {
@@ -34,6 +39,19 @@ public class Coach {
         this.age = age;
         this.id = id;
     }
+
+      public Coach(String nom, String description, String weight, String height, String occupation, int age, int id, String image) {
+        this.nom = nom;
+        this.description = description;
+        this.weight = weight;
+        this.height = height;
+        this.occupation = occupation;
+        this.age = age;
+        this.id = id;
+          this.image = image;
+    }
+
+   
 
     public String getNom() {
         return nom;
@@ -63,6 +81,14 @@ public class Coach {
         return id;
     }
 
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
     public void setNom(String nom) {
         this.nom = nom;
     }
@@ -90,5 +116,12 @@ public class Coach {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Coach{" + "nom=" + nom + ", description=" + description + ", weight=" + weight + ", height=" + height + ", occupation=" + occupation + ", age=" + age + ", id=" + id + ", image=" + image + '}';
+    }
+
+
 
 }
