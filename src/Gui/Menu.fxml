@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.MenuController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="140.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#InterReclamation" prefHeight="101.0" prefWidth="142.0" text="Gerer Reclamation" />
+            <Button mnemonicParsing="false" onAction="#InterReponse" prefHeight="94.0" prefWidth="140.0" text="Gerer Reponses" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="AP" prefHeight="639.0" prefWidth="1037.0" style="-fx-background-color: #14242B;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

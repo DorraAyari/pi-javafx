@@ -27,7 +27,7 @@ public class PiProjectFx extends Application {
     public void start(Stage stage) throws IOException {
         stage.setTitle("Gestion Reclamation");
         //Parent root = FXMLLoader.load(getClass().getResource("/Gui/ReclamationFXML.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("/Gui/ReponseFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Gui/Menu.fxml"));
         
         Scene scene = new Scene(root);
         

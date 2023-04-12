@@ -116,7 +116,17 @@ public class ReclamationFXMLController implements Initializable {
 
     @FXML
     private void Ajouter(ActionEvent event) throws SQLException {
-        if(Validchamp(nom) && Validchamp(prenom) && Validchamp(email)  && Validchamp(message))
+                String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        if (!email.getText().matches(emailRegex)) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Format email incorrect");
+            alert.setHeaderText(null);
+            alert.setContentText("Veuillez saisir un email valide !");
+            alert.showAndWait();
+        }
+        else
+        {
+                    if(Validchamp(nom) && Validchamp(prenom)  && Validchamp(message))
         {
 
          Reclamation r = new Reclamation(nom.getText(), prenom.getText() , email.getText(),message.getText());
@@ -145,6 +155,8 @@ public class ReclamationFXMLController implements Initializable {
 
         alert.showAndWait();
         }   
+        }
+
     }
 
     @FXML
