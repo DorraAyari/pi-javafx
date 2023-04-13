@@ -87,36 +87,7 @@ public class ServiceReclamation implements IService<Reclamation> {
 
     }
     
-    public List<Reclamation> getTrier() throws SQLException {
-    List<Reclamation> arr=new ArrayList<>();
-    ste=con.createStatement();
-    ResultSet rs=ste.executeQuery("select * from reclamation ORDER BY nom DESC");
-     while (rs.next()) {                
-               int id=rs.getInt(1);
-               String nom=rs.getString("nom");
-               String prenom=rs.getString("prenom");
-               String email=rs.getString("email");
-               String message=rs.getString("message");
-               Reclamation p=new Reclamation(id,nom, prenom,email,message);
-     arr.add(p);
-     }
-    return arr;
-    }
-
-  public Reclamation getByName(String n) {
-          Reclamation a = null;
-         String requete = " select* from Produit  where (nom like '"+n+"%')" ;
-        try {
-           
-            ste = con.createStatement();
-            res=ste.executeQuery(requete);
-            if (res.next())
-            {a=new Reclamation(res.getInt(1),res.getString(2),res.getString(3),res.getString(4),res.getString(5));}
-        } catch (SQLException ex) {
-            Logger.getLogger(ServiceReclamation.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return a ;
-    }
+ 
 
     @Override
     public void delete(int id) {
