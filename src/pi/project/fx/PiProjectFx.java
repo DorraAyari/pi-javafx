@@ -5,6 +5,7 @@
  */
 package pi.project.fx;
 
+import Service.BlogService;
 import Service.CoachService;
 import Service.ProduitServise;
 import javafx.application.Application;
@@ -29,7 +30,15 @@ public class PiProjectFx{
      
            // ps.insert(p1);
           // ps.insertPst(p1);
+
           pt.readAll().forEach(System.out::println);
+
+          ps.readAll().forEach(System.out::println);
+          BlogService pss=new BlogService();
+           // ps.insert(p1);
+          // ps.insertPst(p1);
+          pss.readAll().forEach(System.out::println);
+
     }
     
 }
