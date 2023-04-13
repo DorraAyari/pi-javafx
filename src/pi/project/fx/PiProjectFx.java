@@ -6,6 +6,7 @@
 package pi.project.fx;
 
 import Service.CoachService;
+import Service.ProduitServise;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -24,9 +25,11 @@ public class PiProjectFx{
     
     public static void main(String[] args) {
         CoachService ps=new CoachService();
+        ProduitServise pt=new ProduitServise();
+     
            // ps.insert(p1);
           // ps.insertPst(p1);
-          ps.readAll().forEach(System.out::println);
+          pt.readAll().forEach(System.out::println);
     }
     
 }
