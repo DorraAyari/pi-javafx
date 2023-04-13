@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="672.0" prefWidth="955.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddBlogController">
+    <stylesheets>
+        <URL value="@addblog.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="41.0" layoutY="172.0" text="Sujet">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="227.0" text="Description">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="348.0" text="MoreDescription">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="476.0" text="Slogan">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="580.0" text="image">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="43.0" text="ADD BLOG" textFill="#0f1fff">
+         <font>
+            <Font name="Candara Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomField" layoutX="208.0" layoutY="173.0" prefHeight="31.0" prefWidth="286.0" />
+      <TextField fx:id="sloganField" layoutX="208.0" layoutY="475.0" prefHeight="31.0" prefWidth="286.0" />
+      <Button layoutX="383.0" layoutY="672.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#ajouterBlog" opacity="0.86" prefHeight="42.0" prefWidth="111.0" text="ADD" textFill="#0519eb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="755.0" fitWidth="433.0" layoutX="532.0" layoutY="-15.0">
+         <image>
+            <Image url="@../../../../../Downloads/pexels-zakaria-boumliha-2827400.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="descriptionField" layoutX="208.0" layoutY="227.0" prefHeight="92.0" prefWidth="286.0" />
+      <TextArea fx:id="moredescreptionField" layoutX="208.0" layoutY="348.0" prefHeight="92.0" prefWidth="286.0" />
+      <ImageView fx:id="image" fitHeight="103.0" fitWidth="142.0" layoutX="208.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
