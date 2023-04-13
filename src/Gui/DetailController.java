@@ -52,7 +52,7 @@ public class DetailController implements Initializable {
     @FXML
     private ListView<Coach> listview;
  private String imagePath;
-   
+ 
   public void setImagePath(String imagePath) {
     this.imagePath = imagePath;
 }

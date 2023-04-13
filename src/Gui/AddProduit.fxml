@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddProduitController">
+   <children>
+      <Label layoutX="72.0" layoutY="62.0" text="Nom de produit :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="115.0" text="Description:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="167.0" text="Prix de poduit :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="95.0" layoutY="227.0" text="Image :">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="t2" layoutX="216.0" layoutY="120.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="t1" layoutX="216.0" layoutY="71.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="t3" layoutX="216.0" layoutY="164.0" prefHeight="25.0" prefWidth="218.0" />
+      <Button layoutX="245.0" layoutY="349.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="25.0" prefWidth="129.0" text="Ajouter produit" />
+      <Label layoutX="225.0" layoutY="20.0" text="Ajouter un produit" textFill="#2c36ab">
+         <font>
+            <Font name="Leelawadee Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image" fitHeight="105.0" fitWidth="129.0" layoutX="252.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
